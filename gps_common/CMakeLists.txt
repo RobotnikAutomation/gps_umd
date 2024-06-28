@@ -10,6 +10,7 @@ find_package(catkin REQUIRED
   message_filters
   roscpp
   std_msgs
+  std_srvs
   nav_msgs
   sensor_msgs
 )
@@ -24,7 +25,7 @@ add_message_files(
     GPSFix.msg
 )
 
-generate_messages(DEPENDENCIES std_msgs)
+generate_messages(DEPENDENCIES std_msgs std_srvs)
 
 ###################################################
 ## Declare things to be passed to other projects ##

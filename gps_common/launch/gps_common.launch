@@ -1,0 +1,9 @@
+<launch>
+  <node name="utm_odometry_node" pkg="gps_common" type="utm_odometry_node" output="screen">
+    <param name="frame_id" value="robot_odom" />
+    <param name="child_frame_id" value="robot_base_link" />
+    <param name="odom_topic" value="/robot/robotnik_base_control/odom_gps" />
+    <param name="fix_topic" value="/robot/gps/fix" />
+    <param name="rot_covariance" value="1.0" />
+  </node>
+</launch>
